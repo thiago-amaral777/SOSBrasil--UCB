@@ -1,0 +1,201 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* Header */
+
+ul {
+    display: flex;
+    margin: 0px 20px;
+    gap: 20px;
+    
+}
+.header-logo {
+    font-size: 16px;
+    color: #e40e0e;
+}
+
+.header-links a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.header-links a:hover {
+    color: rgb(160, 94, 94);
+    text-decoration: none;
+    font-weight: 530;
+    
+}
+
+header {
+      width:100%;
+      border-bottom:2px solid #f1f1f1;
+      background:#fff;
+     
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.login-btn {
+    
+    background-color: white; /* Cor de fundo laranja */
+    color: #e40e0e;              /* Cor do texto */
+    padding: 10px 20px;        /* Espaçamento interno */
+    border: 2px solid #e40e0e;              /* Remove a borda padrão */
+    border-radius: 10px;        /* Cantos arredondados */
+    cursor: pointer;     
+    transition: color 0.3s ease;
+}
+
+.login-btn:hover {
+    
+    background-color: #e40e0e; /* Cor de fundo laranja */
+    color: #ffffff;              /* Cor do texto */
+    padding: 10px 20px;        /* Espaçamento interno */
+    border: 2px solid #e40e0e;              /* Remove a borda padrão */
+    border-radius: 10px;        /* Cantos arredondados */
+    cursor: pointer;    
+     
+}
+
+.cadastrar-btn { 
+    background-color: #e40e0e; /* Cor de fundo laranja */
+    color: white;              /* Cor do texto */
+    padding: 12px 20px;        /* Espaçamento interno */
+    border: none;              /* Remove a borda padrão */
+    border-radius: 10px;        /* Cantos arredondados */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+}
+
+.cadastrar-btn:hover { 
+    background-color: #a00808; /* Cor de fundo laranja */
+    color: white;              /* Cor do texto */
+    padding: 12px 20px;        /* Espaçamento interno */
+    border: none;              /* Remove a borda padrão */
+    border-radius: 10px;        /* Cantos arredondados */
+    cursor: pointer;
+    
+}
+
+/* Hero */
+
+
+.hero {
+      width:100%;
+    
+      background:#fff;
+      align-items: center;
+}
+.hero h1 {
+      padding-bottom: 20px;
+      background:#fff;
+}
+.hero p {
+    line-height: 30px;
+      padding-bottom: 20px;
+      background:#fff;
+}
+.hero-content {
+
+    max-width: 1200px;
+    margin: 10px auto 30px auto;
+    padding: 18px 30px;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+}
+
+.hero-alerta {
+      width:100%;
+    
+      background:#ffffff;
+      align-items: center;
+      width:100%;
+      padding-bottom: 30px;
+      border-bottom:2px solid #f1f1f1;
+      background:#fff;
+}
+
+.hero-alerta h1 {
+      font-size: 25px;
+      padding-bottom: 5px;
+}
+
+.hero-alerta p {
+      font-size: 14px;
+}
+
+.hero-alerta-content {
+    height: 80px;
+    color: white;
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 30px;
+    align-items: center;
+    background-color: #e71f1f;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-radius: 15px;
+    
+}
+
+
+.hero-alerta-btn {
+    background-color: #e40e0e; /* Cor de fundo laranja */
+    color: #ffffff;              /* Cor do texto */
+    padding: 10px 20px;        /* Espaçamento interno */
+    border: 2px solid white;              /* Remove a borda padrão */
+    border-radius: 10px;        /* Cantos arredondados */
+    cursor: pointer;     
+    transition: color 0.3s ease;
+
+}
+
+.hero-alerta-btn:hover {
+    background-color: white; /* Cor de fundo laranja */
+    color: #e40e0e;              /* Cor do texto */
+    padding: 10px 20px;        /* Espaçamento interno */
+    border: 2px solid white;              /* Remove a borda padrão */
+    border-radius: 10px;        /* Cantos arredondados */
+    cursor: pointer;     
+
+}
+
+/*Section Geral */
+
+.section-geral h2 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.noticia-img {
+    height: 150px;
+    width: 300px;
+    padding-bottom: 4px;
+    border-radius: 15px;
+}
