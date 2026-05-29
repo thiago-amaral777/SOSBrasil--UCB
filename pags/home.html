@@ -4,76 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOSBrasil</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    
 </head>
 <body>
+
+    <!-- ===================== CABEÇALHO ===================== -->
     <header>
-        <nav>
-            <div class="header-logo">
+        <nav class="nav-container">
+            <div class="logo">
                 <h1><strong>SOS</strong>Brasil</h1>
             </div>
-            <div class="header-links">
+            <div class="nav-links">
                 <ul>
-                    <ol><a href="#">Home</a></ol>
-                    <ol><a href="#">Home</a></ol>
-                    <ol><a href="#">Home</a></ol>
-                    <ol><a href="#">Home</a></ol>
-                    <ol><a href="#">Home</a></ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Financeiro</a></li>
+                    <li><a href="#">Interação</a></li>
+                    <li><a href="#">Doação</a></li>
+                    <li><a href="#">Bate-Papo / IA</a></li>
                 </ul>
             </div>
-            <div>
-                <button class="login-btn">Login</button>
-                <button class="cadastrar-btn">Cadastre-se</button>
+            <div class="nav-botoes">
+                <button class="btn-login">Login</button>
+                <button class="btn-cadastrar">Cadastre-se</button>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Frio intenso e baixa umidade colocam Brasília em estado de atenção neste inverno</h1>
-                    <p>Brasília entrou em estado de atenção com a chegada do inverno, marcado por temperaturas mais baixas durante as madrugadas e manhãs, além da baixa umidade do ar ao longo do dia. Especialistas alertam que o clima seco pode causar problemas respiratórios, alergias, irritação nos olhos e ressecamento da pele, principalmente em crianças e idosos. A recomendação é manter a hidratação constante, evitar exposição ao frio nos horários mais críticos, utilizar roupas adequadas e redobrar os cuidados com a qualidade do ar e o risco de queimadas durante o período de estiagem no Distrito Federal.
-                    </p>
-                </div>
-                <div >
-                    <img class="hero-img" src="https://images.unsplash.com/photo-1612208695882-02f2322b7fee?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVtcG8lMjBmcmlvfGVufDB8fDB8fHww" alt="">
+
+        <!-- ===================== SEÇÃO AVISO ===================== -->
+        <section class="secao-aviso">
+            <div class="container">
+                <div class="aviso-conteudo">
+
+                    <!-- Texto do aviso -->
+                    <div class="aviso-texto">
+                        <span class="aviso-etiqueta">Avisos</span>
+                        <p>Brasília entrou em estado de atenção com a chegada do inverno, marcado por temperaturas mais baixas durante as madrugadas e manhãs, além da baixa umidade do ar ao longo do dia. Especialistas alertam que o clima seco pode causar problemas respiratórios, alergias, irritação nos olhos e ressecamento da pele, principalmente em crianças e idosos. A recomendação é manter a hidratação constante, evitar exposição ao frio nos horários mais críticos, utilizar roupas adequadas e redobrar os cuidados com a qualidade do ar e o risco de queimadas durante o período de estiagem no Distrito Federal.</p>
+                        <button class="btn-ver-mais">Ver mais ➔</button>
+                    </div>
+
+                    <!-- Imagem grande do aviso -->
+                    <div class="aviso-imagem">
+                        <img
+                            src="https://images.unsplash.com/photo-1612208695882-02f2322b7fee?fm=jpg&q=60&w=3000&auto=format&fit=crop"
+                            alt="Imagem de aviso"
+                        />
+                    </div>
+
                 </div>
             </div>
         </section>
 
-    <section class="hero-alerta">
-        <div class="hero-alerta-content">
-            <div>
-                <h1>⚠︎ Alerta! Pessoas precisam de ajuda!</h1>
-                <p>O frio em Brasília ameaça pessoas em situação de vulnerabilidade.
-                Doe agasalhos, cobertores e ajude vidas a enfrentarem este inverno.
-                </p>
-            </div>
-            <div>
-                <button class="hero-alerta-btn">Quero ajudar!</button>
-            </div>
-                </section>
-        </div>
+        <!-- ===================== SEÇÃO POSTS + NOTÍCIAS ===================== -->
+        <section class="secao-feed">
+            <div class="container">
+                <div class="feed-colunas">
 
-        <section class="section-noticia">
-            <div class="section-geral">
-                <div class="card-noticia">
-                    <img class="noticia-img" src="https://www.defesacivil.pr.gov.br/sites/defesa-civil/arquivos_restritos/files/imagem/2024-07/cbmpr_-_rs_-_22-07_1.jpg" alt="">
-                    <h2>Vítimas registradas até agora 'são apenas a ponta do iceberg' da tragédia no RS, diz pesquisador da Fiocruz</h2>
-                    <button class="noticia-btn">Ler matéria completa!</button>
+                    <!-- ---- COLUNA ESQUERDA: Posts ---- -->
+                    <div class="coluna-posts">
+                        <h2 class="titulo-secao">Posts</h2>
+
+                        <!-- Card de post -->
+                        <article class="card-post">
+                            <div class="post-imagem">
+                                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=300&h=200&fit=crop" alt="Post 1" />
+                            </div>
+                            <div class="post-conteudo">
+                                <h3 class="post-titulo">POST 1</h3>
+                                <p class="post-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                <div class="post-rodape">
+                                    <div class="post-autor">
+                                        <div class="avatar"></div>
+                                        <span>Usuário</span>
+                                    </div>
+                                    <button class="btn-post">Ler mais</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card-post">
+                            <div class="post-imagem">
+                                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=300&h=200&fit=crop" alt="Post 2" />
+                            </div>
+                            <div class="post-conteudo">
+                                <h3 class="post-titulo">POST 2</h3>
+                                <p class="post-texto">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <div class="post-rodape">
+                                    <div class="post-autor">
+                                        <div class="avatar"></div>
+                                        <span>Usuário</span>
+                                    </div>
+                                    <button class="btn-post">Ler mais</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card-post">
+                            <div class="post-imagem">
+                                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=300&h=200&fit=crop" alt="Post 3" />
+                            </div>
+                            <div class="post-conteudo">
+                                <h3 class="post-titulo">POST 3</h3>
+                                <p class="post-texto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.</p>
+                                <div class="post-rodape">
+                                    <div class="post-autor">
+                                        <div class="avatar"></div>
+                                        <span>Usuário</span>
+                                    </div>
+                                    <button class="btn-post">Ler mais</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card-post">
+                            <div class="post-imagem">
+                                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=300&h=200&fit=crop" alt="Post 4" />
+                            </div>
+                            <div class="post-conteudo">
+                                <h3 class="post-titulo">POST 4</h3>
+                                <p class="post-texto">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                                <div class="post-rodape">
+                                    <div class="post-autor">
+                                        <div class="avatar"></div>
+                                        <span>Usuário</span>
+                                    </div>
+                                    <button class="btn-post">Ler mais</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="paginacao">
+                            <button class="btn-paginacao">← Anterior</button>
+                            <button class="btn-paginacao">Próximo →</button>
+                        </div>
+                    </div>
+
+                    <!-- ---- COLUNA DIREITA: Últimas Notícias ---- -->
+                    <div class="coluna-noticias">
+                        <h2 class="titulo-secao">Últimas Notícias</h2>
+
+                        <article class="card-noticia">
+                            <img src="https://images.unsplash.com/photo-1612208695882-02f2322b7fee?w=300&h=120&fit=crop" alt="Notícia 1" />
+                            <div class="noticia-info">
+                                <span class="noticia-etiqueta">Notícia</span>
+                                <p>Frio intenso coloca Brasília em estado de atenção neste inverno.</p>
+                            </div>
+                        </article>
+
+                        <article class="card-noticia">
+                            <img src="https://www.defesacivil.pr.gov.br/sites/defesa-civil/arquivos_restritos/files/imagem/2024-07/cbmpr_-_rs_-_22-07_1.jpg" alt="Notícia 2" />
+                            <div class="noticia-info">
+                                <span class="noticia-etiqueta">Notícia</span>
+                                <p>Vítimas registradas no RS são 'apenas a ponta do iceberg', diz pesquisador.</p>
+                            </div>
+                        </article>
+
+                        <article class="card-noticia">
+                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=300&h=120&fit=crop" alt="Notícia 3" />
+                            <div class="noticia-info">
+                                <span class="noticia-etiqueta">Notícia</span>
+                                <p>Voluntários arrecadam agasalhos para população em situação de rua.</p>
+                            </div>
+                        </article>
+
+                        <article class="card-noticia">
+                            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=300&h=120&fit=crop" alt="Notícia 4" />
+                            <div class="noticia-info">
+                                <span class="noticia-etiqueta">Notícia</span>
+                                <p>Cestas básicas são distribuídas para famílias vulneráveis no DF.</p>
+                            </div>
+                        </article>
+
+                        <div class="noticias-rodape">
+                            <button class="btn-ver-todas">Ver todas as notícias</button>
+                        </div>
+                    </div>
+
                 </div>
-
-                <div class="card-noticia">
-                    <img class="noticia-img" src="https://www.defesacivil.pr.gov.br/sites/defesa-civil/arquivos_restritos/files/imagem/2024-07/cbmpr_-_rs_-_22-07_1.jpg" alt="">
-                    <h2>Vítimas registradas até agora 'são apenas a ponta do iceberg' da tragédia no RS, diz pesquisador da Fiocruz</h2>
-                    <button class="noticia-btn">Ler matéria completa!</button>
-                </div>
             </div>
-
         </section>
+
+        <!-- ===================== SEÇÃO AJUDA ===================== -->
+        <section class="secao-ajuda">
+            <div class="container">
+                <h2 class="titulo-ajuda">Existem pessoas que precisam da sua ajuda!</h2>
+
+                <div class="ajuda-cards">
+
+                    <div class="card-ajuda">
+                        <div class="card-ajuda-imagem">
+                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=300&h=180&fit=crop" alt="Pessoas necessitadas" />
+                        </div>
+                        <h3>Pessoas necessitadas</h3>
+                        <p>Aqui será apresentada uma descrição sobre as pessoas que precisam de ajuda na sua região.</p>
+                        <button class="btn-ajudar">Quero ajudar</button>
+                    </div>
+
+                    <div class="card-ajuda">
+                        <div class="card-ajuda-imagem">
+                            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=300&h=180&fit=crop" alt="Quantidade necessitada" />
+                        </div>
+                        <h3>Quantidade necessitada</h3>
+                        <p>Aqui será apresentada uma descrição sobre a quantidade de recursos necessários para a comunidade.</p>
+                        <button class="btn-ajudar">Quero ajudar</button>
+                    </div>
+
+                    <div class="card-ajuda">
+                        <div class="card-ajuda-imagem">
+                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=300&h=180&fit=crop" alt="Doações feitas" />
+                        </div>
+                        <h3>Doações feitas</h3>
+                        <p>Aqui será apresentada uma descrição sobre as doações já realizadas e o impacto gerado na comunidade.</p>
+                        <button class="btn-ajudar">Quero ajudar</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer>
+        <div class="container">
+            <p>© 2026 SOSBrasil — Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
