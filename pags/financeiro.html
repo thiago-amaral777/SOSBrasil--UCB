@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSBrasil — Financeiro</title>
+    <link rel="stylesheet" href="css/financeiro.css">
+</head>
+<body>
+
+    <!-- ===================== CABEÇALHO ===================== -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <h1><strong>SOS</strong>Brasil</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="ativo">Financeiro</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="nav-botoes">
+                <button class="btn-login">Login</button>
+                <button class="btn-cadastrar">Cadastre-se</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="secao-hero">
+            <div class="container">
+                <div class="hero-conteudo">
+
+                    <div class="hero-texto">
+                        <h1>Financeiro Digital</h1>
+                        <p>Soluções rápidas e seguras para pagamentos e gestão financeira.</p>
+                        <div class="hero-botoes">
+                            <button class="btn-hero-primario">Acessar Conta</button>
+                            <button class="btn-hero-secundario">Ver Serviços</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-imagem">
+                        <img
+                            src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=380&fit=crop"
+                            alt="Financeiro Digital"
+                        />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SERVIÇOS FINANCEIROS ===================== -->
+        <section class="secao-servicos">
+            <div class="container">
+                <h2 class="titulo-secao-pagina">Serviços Financeiros</h2>
+
+                <!--
+                    Grid 3x2: repeat(3, 1fr) cria 3 colunas iguais.
+                    Os 6 cards preenchem as duas linhas automaticamente.
+                -->
+                <div class="grid-servicos">
+
+                    <div class="card-servico">
+                        <div class="servico-icone">🧾</div>
+                        <div class="servico-info">
+                            <h3>Boleto</h3>
+                            <p>Emita e pague seus boletos com facilidade</p>
+                        </div>
+                    </div>
+
+                    <div class="card-servico">
+                        <div class="servico-icone">💳</div>
+                        <div class="servico-info">
+                            <h3>Cartão (D/C)</h3>
+                            <p>Gerencie Débito e Crédito</p>
+                        </div>
+                    </div>
+
+                    <div class="card-servico">
+                        <div class="servico-icone">⬡</div>
+                        <div class="servico-info">
+                            <h3>PIX</h3>
+                            <p>Envie e receba pagamentos instantâneos</p>
+                        </div>
+                    </div>
+
+                    <div class="card-servico">
+                        <div class="servico-icone">🔄</div>
+                        <div class="servico-info">
+                            <h3>Transferência</h3>
+                            <p>Transfira entre contas com segurança</p>
+                        </div>
+                    </div>
+
+                    <div class="card-servico">
+                        <div class="servico-icone">📊</div>
+                        <div class="servico-info">
+                            <h3>Extrato</h3>
+                            <p>Consulte histórico financeiro</p>
+                        </div>
+                    </div>
+
+                    <div class="card-servico">
+                        <div class="servico-icone">⚙️</div>
+                        <div class="servico-info">
+                            <h3>Configurações</h3>
+                            <p>Ajustes da conta e segurança</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== AJUDAR UMA ONG ===================== -->
+        <section class="secao-ong">
+            <div class="container">
+                <h2 class="titulo-secao-pagina">Ajudar uma ONG</h2>
+
+                <div class="grid-ong">
+
+                    <div class="card-ong">
+                        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&h=200&fit=crop" alt="ONG Goiás" />
+                        <h3>ONG de Goiás</h3>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                        <div class="ong-rodape">
+                            <button class="btn-ajudar-ong">Ajudar</button>
+                        </div>
+                    </div>
+
+                    <div class="card-ong destaque">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=200&fit=crop" alt="ONG Minas Gerais" />
+                        <h3>ONG de Minas Gerais</h3>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                        <div class="ong-rodape">
+                            <button class="btn-ajudar-ong">Ajudar</button>
+                        </div>
+                    </div>
+
+                    <div class="card-ong">
+                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&h=200&fit=crop" alt="ONG Distrito Federal" />
+                        <h3>ONG de Distrito Federal</h3>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                        <div class="ong-rodape">
+                            <button class="btn-ajudar-ong">Ajudar</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Paginação -->
+                <div class="paginacao-ong">
+                    <button class="btn-pag-seta">◀</button>
+                    <div class="pontos-paginacao">
+                        <span class="ponto ativo"></span>
+                        <span class="ponto"></span>
+                        <span class="ponto"></span>
+                        <span class="ponto"></span>
+                    </div>
+                    <button class="btn-pag-seta">▶</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================== QUERO DOAR SEPARADAMENTE ===================== -->
+        <section class="secao-doacao">
+            <div class="container">
+                <h2 class="titulo-secao-pagina">Quero doar separadamente</h2>
+
+                <div class="grid-categorias">
+
+                    <!-- Card: Alimentos -->
+                    <div class="card-categoria">
+                        <h3 class="categoria-titulo">Alimentos</h3>
+                        <label class="area-upload" for="upload-alimentos">
+                            <span class="icone-upload">☁</span>
+                            <span>Faça sua doação</span>
+                            <input type="file" id="upload-alimentos" hidden />
+                        </label>
+                        <div class="contador">
+                            <button class="btn-contador">+</button>
+                            <span class="valor-label">R$ 0,00</span>
+                            <button class="btn-contador">−</button>
+                        </div>
+                    </div>
+
+                    <!-- Card: Roupas -->
+                    <div class="card-categoria">
+                        <h3 class="categoria-titulo">Roupas</h3>
+                        <label class="area-upload" for="upload-roupas">
+                            <span class="icone-upload">☁</span>
+                            <span>Faça sua doação</span>
+                            <input type="file" id="upload-roupas" hidden />
+                        </label>
+                        <div class="contador">
+                            <button class="btn-contador">+</button>
+                            <span class="valor-label">R$ 0,00</span>
+                            <button class="btn-contador">−</button>
+                        </div>
+                    </div>
+
+                    <!-- Card: Brinquedos -->
+                    <div class="card-categoria">
+                        <h3 class="categoria-titulo">Brinquedos</h3>
+                        <label class="area-upload" for="upload-brinquedos">
+                            <span class="icone-upload">☁</span>
+                            <span>Faça sua doação</span>
+                            <input type="file" id="upload-brinquedos" hidden />
+                        </label>
+                        <div class="contador">
+                            <button class="btn-contador">+</button>
+                            <span class="valor-label">R$ 0,00</span>
+                            <button class="btn-contador">−</button>
+                        </div>
+                    </div>
+
+                    <!-- Card: Suporte / Outros -->
+                    <div class="card-categoria">
+                        <h3 class="categoria-titulo">Suporte / Outros</h3>
+                        <label class="area-upload" for="upload-outros">
+                            <span class="icone-upload">☁</span>
+                            <span>Faça sua doação</span>
+                            <input type="file" id="upload-outros" hidden />
+                        </label>
+                        <div class="contador">
+                            <button class="btn-contador">+</button>
+                            <span class="valor-label">R$ 0,00</span>
+                            <button class="btn-contador">−</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper-btn-doar">
+                    <button class="btn-doar">Doar +</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================== ATUALIZAÇÃO AO VIVO ===================== -->
+        <section class="secao-atualizacao">
+            <div class="container">
+                <h2 class="titulo-secao-pagina">Atualização ao vivo</h2>
+
+                <div class="grid-atualizacao">
+
+                    <div class="card-atualizacao">
+                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&h=200&fit=crop" alt="Pessoas necessitadas" />
+                        <h3>Pessoas necessitadas</h3>
+                        <p>Quantidade de pessoas do bairro que precisam de ajuda. Ao clicar em <strong>"DESCUBRA QUEM SÃO"</strong>, mostre mais detalhes.</p>
+                        <button class="btn-descubra">Descubra quem são</button>
+                    </div>
+
+                    <div class="card-atualizacao">
+                        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&h=200&fit=crop" alt="Quantia arrecadada" />
+                        <h3>Quantia arrecadada</h3>
+                        <p>Quantidade de recursos arrecadados para ajudar as pessoas. Ao clicar em <strong>"DOAR QUANTIA"</strong>, mostre mais detalhes.</p>
+                        <button class="btn-descubra">Doar quantia</button>
+                    </div>
+
+                    <div class="card-atualizacao">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=200&fit=crop" alt="Doações feitas" />
+                        <h3>Doações feitas</h3>
+                        <p>Quantidade de doações já realizadas para ajudar as pessoas. Ao clicar em <strong>"DOAR NECESSIDADES"</strong>, mostre mais detalhes.</p>
+                        <button class="btn-descubra">Doar necessidades</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer>
+        <div class="container footer-conteudo">
+            <div class="footer-logo">
+                <h2><strong>SOS</strong>Brasil</h2>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

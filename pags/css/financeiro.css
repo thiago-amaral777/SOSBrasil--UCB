@@ -7,12 +7,13 @@
 }
 
 :root {
-    --vermelho: #e40e0e;
-    --vermelho-escuro: #a00808;
-    --cinza-borda: #f1f1f1;
-    --cinza-texto: #444;
-    --cinza-claro: #f5f5f5;
-    --branco: #ffffff;
+    --vermelho:       #e40e0e;
+    --vermelho-escuro:#a00808;
+    --cinza-borda:    #f1f1f1;
+    --cinza-texto:    #444;
+    --cinza-claro:    #f5f5f5;
+    --cinza-medio:    #ebebeb;
+    --branco:         #ffffff;
 }
 
 /* ===================== CONTAINER ===================== */
@@ -100,65 +101,169 @@ header {
     background: var(--vermelho-escuro);
 }
 
-/* ===================== TOGGLE DOADOR / VOLUNTÁRIO ===================== */
-.secao-toggle {
-    padding: 30px 0;
+/* ===================== HERO ===================== */
+.secao-hero {
+    padding: 60px 0;
     background: var(--branco);
     border-bottom: 2px solid var(--cinza-borda);
 }
 
 /*
-  O wrapper é o fundo cinza arredondado.
-  Os botões ficam lado a lado dentro dele com display: flex.
+    Flex com espaço entre os dois lados:
+    texto (esquerda) + imagem (direita)
 */
-.toggle-wrapper {
+.hero-conteudo {
     display: flex;
-    background: var(--cinza-claro);
-    border: 2px solid #ddd;
-    border-radius: 50px;        /* arredondado em cápsula */
-    padding: 5px;
-    max-width: 600px;
-    margin: 0 auto;             /* centraliza */
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
-.toggle-btn {
-    flex: 1;                    /* cada botão ocupa metade */
-    padding: 14px 0;
+.hero-texto {
+    flex: 0 0 45%;          /* ocupa 45% da largura */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-texto h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.2;
+}
+
+.hero-texto p {
+    font-size: 16px;
+    color: var(--cinza-texto);
+    line-height: 1.6;
+}
+
+.hero-botoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn-hero-primario {
+    background: #111;
+    color: var(--branco);
+    padding: 12px 24px;
     border: none;
     border-radius: 50px;
-    background: transparent;
+    cursor: pointer;
     font-size: 15px;
     font-weight: 600;
-    color: #888;
+    transition: background 0.3s;
+}
+.btn-hero-primario:hover {
+    background: var(--vermelho);
+}
+
+.btn-hero-secundario {
+    background: var(--branco);
+    color: #111;
+    padding: 12px 24px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btn-hero-secundario:hover {
+    border-color: var(--vermelho);
+    color: var(--vermelho);
+}
+
+.hero-imagem {
+    flex: 1;                /* ocupa o espaço restante */
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+/* ===================== SERVIÇOS FINANCEIROS ===================== */
+.secao-servicos {
+    padding: 50px 0;
+    background: var(--branco);
+    border-bottom: 2px solid var(--cinza-borda);
+}
+
+.titulo-secao-pagina {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 28px;
+}
+
+/*
+    Grid 3x2: 3 colunas iguais.
+    Os 6 cards preenchem as duas linhas automaticamente,
+    sem precisar dizer quantas linhas existem.
+*/
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+/*
+    Cada card tem ícone à esquerda e texto à direita:
+    display flex em linha (row, que é o padrão).
+*/
+.card-servico {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    border: 2px solid var(--cinza-borda);
+    border-radius: 14px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-/* Botão ativo: fundo branco com sombra, texto escuro */
-.toggle-btn.ativo {
-    background: var(--branco);
-    color: #222;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.card-servico:hover {
+    border-color: var(--vermelho);
+    box-shadow: 0 4px 16px rgba(228,14,14,0.08);
 }
 
-/* ===================== SEÇÃO ONG ===================== */
-.secao-ong {
-    padding: 40px 0;
-    background: var(--branco);
+.servico-icone {
+    font-size: 28px;
+    flex-shrink: 0;         /* o ícone nunca encolhe */
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cinza-claro);
+    border-radius: 10px;
 }
 
-/* Caixa com borda que envolve o conteúdo de ONGs */
-.secao-caixa {
-    border: 2px solid var(--cinza-borda);
-    border-radius: 16px;
-    padding: 30px;
-}
-
-.titulo-secao-interna {
-    font-size: 20px;
+.servico-info h3 {
+    font-size: 15px;
     font-weight: 700;
     color: #222;
-    margin-bottom: 24px;
+    margin-bottom: 4px;
+}
+
+.servico-info p {
+    font-size: 13px;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+}
+
+/* ===================== AJUDAR UMA ONG ===================== */
+.secao-ong {
+    padding: 50px 0;
+    background: var(--cinza-medio);  /* fundo cinza diferenciado */
+    border-top: 2px solid var(--cinza-borda);
+    border-bottom: 2px solid var(--cinza-borda);
 }
 
 /* Grid de 3 colunas para os cards de ONG */
@@ -166,35 +271,80 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .card-ong {
+    background: var(--branco);
+    border-radius: 14px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 16px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s;
+    transition: border 0.3s;
+}
+
+.card-ong:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+        border: 2px solid var(--vermelho);
+}
+
+/* Card destaque: leve borda vermelha */
+.card-ong.destaque {
+
 }
 
 .card-ong img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
     display: block;
 }
 
 .card-ong h3 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: #222;
     text-transform: uppercase;
+    padding: 0 16px;
 }
 
 .card-ong p {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--cinza-texto);
     line-height: 1.6;
+    padding: 0 16px;
     flex: 1;
+}
+
+.ong-rodape {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+/* Barrinha de progresso decorativa */
+.ong-barra {
+    height: 4px;
+    background: var(--cinza-claro);
+    border-radius: 4px;
+    position: relative;
+}
+
+.ong-barra::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;             /* representa o progresso da arrecadação */
+    background: var(--vermelho);
+    border-radius: 4px;
 }
 
 .btn-ajudar-ong {
@@ -207,7 +357,6 @@ header {
     cursor: pointer;
     font-size: 14px;
     transition: all 0.3s;
-    margin-top: auto;
 }
 
 .btn-ajudar-ong:hover {
@@ -216,82 +365,65 @@ header {
     border-color: var(--vermelho);
 }
 
-/* Páginas de ONG — só a ativa aparece */
-.pagina-ong {
-    display: none;
-}
-.pagina-ong.ativa {
-    display: block;
-}
-
-/* ---- Paginação ---- */
+/* ---- Paginação com pontos ---- */
 .paginacao-ong {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    margin-top: 10px;
+    gap: 16px;
 }
 
-.numeros-paginacao {
+.pontos-paginacao {
     display: flex;
-    gap: 6px;
-}
-
-.num-pag {
-    width: 32px;
-    height: 32px;
-    display: flex;
+    gap: 8px;
     align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    font-size: 14px;
+}
+
+/*
+    Os pontos são spans vazios estilizados com CSS puro.
+    O ativo é maior e preenchido; os outros são menores e vazios.
+*/
+.ponto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
     cursor: pointer;
-    color: var(--cinza-texto);
     transition: all 0.2s;
 }
 
-.num-pag:hover {
-    background: var(--cinza-claro);
-}
-
-.num-pag.ativo {
+.ponto.ativo {
     background: #222;
-    color: var(--branco);
-    font-weight: 700;
+    width: 12px;
+    height: 12px;
 }
 
 .btn-pag-seta {
-    background: #222;
-    color: var(--branco);
-    border: none;
+    background: var(--cinza-claro);
+    color: var(--cinza-texto);
+    border: 1px solid #ddd;
     width: 32px;
     height: 32px;
     border-radius: 6px;
     cursor: pointer;
     font-size: 12px;
-    transition: background 0.2s;
+    transition: all 0.2s;
 }
 
 .btn-pag-seta:hover {
-    background: var(--vermelho);
+    background: #222;
+    color: var(--branco);
+    border-color: #222;
 }
 
-/* ===================== SEÇÃO DOAÇÃO SEPARADA ===================== */
-.secao-doacao-separada {
+/* ===================== QUERO DOAR SEPARADAMENTE ===================== */
+.secao-doacao {
     padding: 50px 0;
-    background: var(--cinza-claro);
-    border-top: 2px solid var(--cinza-borda);
+    background: var(--branco);
+    border-bottom: 2px solid var(--cinza-borda);
 }
 
-.titulo-secao-pagina {
-    font-size: 22px;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 30px;
-}
-
-/* Grid de 4 colunas iguais para as categorias */
+/* Grid de 4 colunas iguais */
 .grid-categorias {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -303,23 +435,23 @@ header {
     background: var(--branco);
     border: 2px solid #ddd;
     border-radius: 14px;
-    padding: 20px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
+    transition: border-color 0.3s;
+}
+
+.card-categoria:hover {
+    border-color: var(--vermelho);
 }
 
 .categoria-titulo {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     color: #222;
 }
 
-/*
-  Área de upload: label estilizada como botão.
-  Usar <label> com <input type="file" hidden> dentro
-  é a forma correta de criar um botão de upload customizado.
-*/
 .area-upload {
     display: flex;
     flex-direction: column;
@@ -328,7 +460,7 @@ header {
     gap: 8px;
     border: 2px dashed #ccc;
     border-radius: 10px;
-    padding: 24px 10px;
+    padding: 20px 10px;
     cursor: pointer;
     text-align: center;
     font-size: 13px;
@@ -344,11 +476,14 @@ header {
 }
 
 .icone-upload {
-    font-size: 24px;
+    font-size: 26px;
     color: #bbb;
 }
 
-/* ---- Contador de quantidade ---- */
+/*
+    Contador: botões + e - nas extremidades, valor no centro.
+    Flex com justify-content: space-between separa os 3 elementos.
+*/
 .contador {
     display: flex;
     align-items: center;
@@ -356,13 +491,14 @@ header {
     background: var(--cinza-claro);
     border: 1px solid #ddd;
     border-radius: 50px;
-    padding: 6px 12px;
+    padding: 6px 10px;
 }
 
 .btn-contador {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     color: var(--cinza-texto);
     cursor: pointer;
     width: 28px;
@@ -380,7 +516,7 @@ header {
     color: var(--branco);
 }
 
-.qtd-label {
+.valor-label {
     font-size: 14px;
     font-weight: 600;
     color: #333;
@@ -390,7 +526,6 @@ header {
 .wrapper-btn-doar {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
 .btn-doar {
@@ -413,11 +548,10 @@ header {
     border-color: var(--vermelho);
 }
 
-/* ===================== SEÇÃO ATUALIZAÇÃO AO VIVO ===================== */
+/* ===================== ATUALIZAÇÃO AO VIVO ===================== */
 .secao-atualizacao {
     padding: 50px 0 60px;
-    background: var(--branco);
-    border-top: 2px solid var(--cinza-borda);
+    background: var(--cinza-claro);
 }
 
 /* Grid de 3 colunas iguais */
@@ -428,16 +562,25 @@ header {
 }
 
 .card-atualizacao {
+    background: var(--branco);
+    border-radius: 14px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-bottom: 20px;
+    border: 1px solid var(--cinza-borda);
+    transition: box-shadow 0.3s;
+}
+
+.card-atualizacao:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
 }
 
 .card-atualizacao img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
     display: block;
 }
 
@@ -445,16 +588,19 @@ header {
     font-size: 16px;
     font-weight: 700;
     color: #222;
+    padding: 0 16px;
 }
 
 .card-atualizacao p {
     font-size: 13px;
     color: var(--cinza-texto);
     line-height: 1.6;
+    padding: 0 16px;
     flex: 1;
 }
 
 .btn-descubra {
+    margin: 0 16px;
     align-self: flex-start;
     background: var(--cinza-claro);
     color: var(--cinza-texto);
@@ -470,58 +616,6 @@ header {
     background: var(--vermelho);
     color: var(--branco);
     border-color: var(--vermelho);
-}
-
-/* ===================== ABA VOLUNTÁRIO ===================== */
-.escondido {
-    display: none;
-}
-
-.secao-voluntario {
-    padding: 80px 0;
-}
-
-.voluntario-aviso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.voluntario-aviso span {
-    font-size: 60px;
-}
-
-.voluntario-aviso h2 {
-    font-size: 26px;
-    font-weight: 700;
-    color: #222;
-}
-
-.voluntario-aviso p {
-    font-size: 15px;
-    color: var(--cinza-texto);
-    line-height: 1.7;
-}
-
-.btn-cadastrar-voluntario {
-    background: var(--vermelho);
-    color: var(--branco);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    transition: background 0.3s;
-    margin-top: 8px;
-}
-
-.btn-cadastrar-voluntario:hover {
-    background: var(--vermelho-escuro);
 }
 
 /* ===================== RODAPÉ ===================== */
