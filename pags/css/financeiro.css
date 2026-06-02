@@ -293,9 +293,7 @@ header {
 }
 
 /* Card destaque: leve borda vermelha */
-.card-ong.destaque {
 
-}
 
 .card-ong img {
     width: 100%;
@@ -622,33 +620,7 @@ header {
 footer {
     background: #222;
     color: #aaa;
-    padding: 30px 0;
-}
-
-.footer-conteudo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer-logo h2 {
-    font-size: 18px;
-    color: var(--branco);
-}
-
-.footer-links {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-}
-
-.footer-links a {
-    color: #aaa;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    color: var(--branco);
+    padding: 24px 0;
+    text-align: center;
+    font-size: 13px;
 }

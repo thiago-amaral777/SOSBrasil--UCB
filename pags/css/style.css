@@ -65,6 +65,12 @@ header {
     font-weight: 600;
 }
 
+.nav-links a:hover,
+.nav-links a.ativo {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
 .nav-botoes {
     display: flex;
     gap: 10px;
@@ -428,6 +434,8 @@ header {
 }
 
 .btn-ajudar {
+    text-decoration: none;
+    text-align: center;
     margin: 0 20px;
     background: var(--vermelho);
     color: var(--branco);
