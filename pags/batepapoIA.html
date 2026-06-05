@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOSBrasil - Bate Papo</title>
+    <link rel="stylesheet" href="css/batepapoIA.css">
+
 </head>
 <body>
     <! =========== Cabeçalho =========== >
@@ -42,8 +44,8 @@
                         <h2> CHAT IA </h2>
                             <p> Tire suas dúvidas com nossa inteligência artificial </p>
 
-        <! ====================== Conversas =====================> 
-                    
+        <!====================== Conversas ===================== --> 
+        <div class="pscConversas">            
             <h3> Conversas </h3>
                 <div class="busca-container">
     <input type="text" placeholder="Buscar conversas..." class="busca-input">
@@ -90,8 +92,10 @@
                 <button class="btn-nova-conversa">💬 Nova conversa</button>
 
             </div>
+        </div>
         <! ================== Chat Principal ===================>
-            <section>
+        <div class="pscChatPrin">
+        <section>
                 <div class="chat-janela">
                 <div class="chat-avatar">🤖</div>
                 <h3> Atendimento IA </h3>
@@ -108,7 +112,7 @@
             </div>
         </section>
     </section>
-    <section>
+    </div>
         <! ================= Dúvidas Frequentes ===================>
             <h2> Dúvidas Frequentes </h2>
             <p> Encontre respostas rápidas para as princpais dúvidas </p>
