@@ -1,0 +1,113 @@
+/* ===================== RESET & BASE ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+    --vermelho:       #e40e0e;
+    --vermelho-escuro:#a00808;
+    --cinza-borda:    #f1f1f1;
+    --cinza-texto:    #444;
+    --cinza-claro:    #f5f5f5;
+    --cinza-medio:    #ebebeb;
+    --branco:         #ffffff;
+}
+
+/* ===================== CONTAINER ===================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* ===================== CABEÇALHO ===================== */
+header {
+    width: 100%;
+    background: var(--branco);
+    border-bottom: 2px solid var(--cinza-borda);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: var(--vermelho);
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #272727;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.ativo {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+.nav-botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login {
+    background: var(--branco);
+    color: var(--vermelho);
+    padding: 10px 20px;
+    border: 2px solid var(--vermelho);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.btn-login:hover {
+    background: var(--vermelho);
+    color: var(--branco);
+}
+
+.btn-cadastrar {
+    background: var(--vermelho);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3ms;
+}
+.btn-cadastrar:hover {
+    background: var(--vermelho-escuro);
+}
+
+ 
+
+/* ===================== RODAPÉ ===================== */
+footer {
+    background: #222;
+    color: #aaa;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 13px;
+}
