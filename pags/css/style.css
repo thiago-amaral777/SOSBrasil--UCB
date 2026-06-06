@@ -20,6 +20,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+    
 }
 
 /* ===================== CABEÇALHO ===================== */
@@ -213,7 +214,7 @@ header {
 
 .post-imagem img {
     width: 200px;
-    height: 140px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     display: block;
@@ -436,7 +437,8 @@ header {
 .btn-ajudar {
     text-decoration: none;
     text-align: center;
-    margin: 0 20px;
+    margin: 0px px;
+    margin-top: 28px;
     background: var(--vermelho);
     color: var(--branco);
     border: none;
@@ -445,6 +447,8 @@ header {
     cursor: pointer;
     font-size: 14px;
     transition: background 0.3s;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-ajudar:hover {
