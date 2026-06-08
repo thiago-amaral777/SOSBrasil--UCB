@@ -10,141 +10,190 @@
 <body>
     <! =========== Cabeçalho =========== >
     <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <h1><strong>SOS</strong>Brasil</h1>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="financeiro.html">Financeiro</a></li>
-                    <li><a href="#">Interação</a></li>
-                    <li><a href="#">Doação</a></li>
-                    <li><a href="batepapoIA.html" class="ativo">Bate-Papo / IA</a></li>
-                </ul>
-            </div>
-            <div class="nav-botoes">
-                <button class="btn-login">Login</button>
-                <button class="btn-cadastrar">Cadastre-se</button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- ===================== HERO ===================== -->
-        <section class="secao-hero">
-            <div class="container">
-                <div class="hero-conteudo">
-
-                    <div >
-                        <h1> Bate Papo </h1>
-                        <p>Fale com anossa equipe ou acompanhe suas solicitações</p>
-                    
-                    <section>
-                        <h2> CHAT IA </h2>
-                            <p> Tire suas dúvidas com nossa inteligência artificial </p>
-
-        <!====================== Conversas ===================== --> 
-        <div class="pscConversas">            
-            <h3> Conversas </h3>
-                <div class="busca-container">
-    <input type="text" placeholder="Buscar conversas..." class="busca-input">
-    <span class="busca-icone">🔍</span>
-        </div>
-
-            <ul class="lista-conversas">
-
-                <li class="conversa-item">
-                <div class="conversa-avatar"></div>
-            <div class="conversa-info">
-            
-            <div class="conversa-cabecalho">
-                <span class="conversa-nome">Atendimento IA</span>
-                <span class="conversa-hora">10:30</span>
-            </div>
-                <p class="conversa-preview">Qual horário de funciona...</p>
+    <nav class="nav-container">
+      <div class="logo">
+        <h1><strong>SOS</strong>Brasil</h1>
       </div>
-    </li>
-
-                <li class="conversa-item">
-            <div class="conversa-avatar"></div>
-            <div class="conversa-info">
-            <div class="conversa-cabecalho">
-                <span class="conversa-nome">Atendimento IA</span>
-                <span class="conversa-hora">Ontem</span>
-        </div>
-                <p class="conversa-preview">Olá como posso Ajudar?</p>
-        </div>
-    </li>
-
-                <li class="conversa-item">
-            <div class="conversa-avatar"></div>
-            <div class="conversa-info">
-            <div class="conversa-cabecalho">
-                <span class="conversa-nome">Atendimento IA</span>
-                <span class="conversa-hora">12/05</span>
-            </div>
-                <p class="conversa-preview">Obrigada!</p>
-            </div>
-        </li>
+      <div class="nav-links">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="financeiro.html">Financeiro</a></li>
+          <li><a href="#">Interação</a></li>
+          <li><a href="#">Doação</a></li>
+          <li><a href="batepapoIA.html" class="ativo">Bate-Papo / IA</a></li>
         </ul>
-
-                <button class="btn-nova-conversa">💬 Nova conversa</button>
-
+      </div>
+      <div class="nav-botoes">
+        <button class="btn-login">Login</button>
+        <button class="btn-cadastrar">Cadastre-se</button>
+      </div>
+    </nav>
+  </header>
+ 
+  <main>
+ 
+    <!-- =========== HERO — TÍTULO BATE PAPO =========== -->
+    <section class="secao-hero">
+      <i class="fa-regular fa-comment-dots hero-icone"></i>
+      <h1 class="hero-titulo">BATE PAPO</h1>
+      <p class="hero-subtitulo">Fale com a nossa equipe ou acompanhe suas solicitações</p>
+    </section>
+ 
+    <!-- =========== CHAT IA =========== -->
+    <section class="secao-chat">
+      <div class="chat-card">
+ 
+        <h2 class="chat-titulo">CHAT IA</h2>
+        <p class="chat-subtitulo">Tire suas dúvidas com nossa inteligência artificial</p>
+ 
+        <!-- Duas colunas -->
+        <div class="chat-container">
+ 
+          <!-- COLUNA ESQUERDA — Conversas -->
+          <div class="sidebar">
+ 
+            <h3 class="sidebar-titulo">Conversas</h3>
+ 
+            <div class="busca-container">
+              <input type="text" placeholder="Buscar conversas..." class="busca-input">
+              <i class="fa-solid fa-magnifying-glass busca-icone"></i>
             </div>
-        </div>
-        <! ================== Chat Principal ===================>
-        <div class="pscChatPrin">
-        <section>
-                <div class="chat-janela">
-                <div class="chat-avatar">🤖</div>
-                <h3> Atendimento IA </h3>
-            <div class="bolha bolha enviada">
-                <h4><strong> Olá! Como posso te ajudar hoje? </strong></h4>
+ 
+            <ul class="lista-conversas">
+              <li class="conversa-item">
+                <div class="conversa-avatar"></div>
+                <div class="conversa-info">
+                  <div class="conversa-cabecalho">
+                    <span class="conversa-nome">Atendimento IA</span>
+                    <span class="conversa-hora">10:30</span>
+                  </div>
+                  <p class="conversa-preview">Qual horário de funciona...</p>
+                </div>
+              </li>
+              <li class="conversa-item">
+                <div class="conversa-avatar"></div>
+                <div class="conversa-info">
+                  <div class="conversa-cabecalho">
+                    <span class="conversa-nome">Atendimento IA</span>
+                    <span class="conversa-hora">Ontem</span>
+                  </div>
+                  <p class="conversa-preview">Olá como posso Ajudar?</p>
+                </div>
+              </li>
+              <li class="conversa-item">
+                <div class="conversa-avatar"></div>
+                <div class="conversa-info">
+                  <div class="conversa-cabecalho">
+                    <span class="conversa-nome">Atendimento IA</span>
+                    <span class="conversa-hora">12/05</span>
+                  </div>
+                  <p class="conversa-preview">Obrigada!</p>
+                </div>
+              </li>
+            </ul>
+ 
+            <button class="btn-nova-conversa">
+              <i class="fa-regular fa-comment-dots"></i> Nova conversa
+            </button>
+ 
+          </div>
+          <!-- fim sidebar -->
+ 
+          <!-- COLUNA DIREITA — Atendimento IA -->
+          <div class="chat-janela">
+ 
+            <div class="chat-cabecalho">
+              <div class="chat-avatar-icone">
+                <i class="fa-regular fa-id-badge"></i>
+              </div>
+              <span class="chat-nome">Atendimento IA</span>
+            </div>
+ 
+            <div class="chat-mensagens">
+              <div class="bolha bolha-recebida">
+                <strong>Olá! como posso te ajudar hoje?</strong>
                 <p>Digite sua pergunta no campo abaixo e nossa IA irá te responder.</p>
+              </div>
             </div>
-            <div class="input-container"> 
-                <textarea name="chatIA" placeholder="Digite aqui sua pergunta..." id="" cols="50" rows="5"></textarea>
-            
-            <div class="input-icons"
-                <span class="chat-icone-clipe">📎</span>
-                <button class="chat-btn-enviar">›</button>   
+ 
+            <div class="input-container">
+              <textarea class="chat-textarea" placeholder="Digite sua pergunta..." rows="1"></textarea>
+              <div class="input-icons">
+                <i class="fa-solid fa-paperclip chat-icone-clipe"></i>
+                <button class="chat-btn-enviar">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
             </div>
-        </section>
-    </section>
-    </div>
-        <! ================= Dúvidas Frequentes ===================>
-            <h2> Dúvidas Frequentes </h2>
-            <p> Encontre respostas rápidas para as princpais dúvidas </p>
-        
-        <details> 
-            <summary> Como faço para atualizar meus dados cadastrais?
-            </summary>
-                <p> Vá em usuário e clique em "Dados Cadastrais" e veja quais dados serão atualizados e clique em "Editar". Se caso for a senha, vá até a tela de login e clique em "Esqueci minha senha". </p>
-        </details>
-        <details>
-            <summary> Quais as formas de pagamentos aceitas para doação? 
-            </summary>
-                <p> A SOS Brasil aceita: Boleto, Cartão (Crédito e Débito), Pix e Transferência Bancária. Clique em <a href="financeiro.html"></a> e escolha seu meio de doação.</p>
-        </details>
-        <details>
-            <summary> Como posso acompanhar o status da minha doação? 
-            </summary>
-                <p> Você irá receber atualizações por E-Mails e imagens no nosso portal de notícias. Todas as doações serão publicadas no portal "SOS Brasil".</p>
-        </details>
-        <details>
-            <summary> Como falo com um atendente da SOS Brasil? 
-            </summary>
-                <p> Clique em "Fale com a gente" no botão abaixo e você será redirecionado para nosso chat com um atendente da SOS Brasil no WhatsApp.</p>
-        </details>
-        
-        <div>
-            <span class="icone-interrogacao">?</span>
-            <input type="button" 
-            value="Não encontrou sua dúvida? Fale com a gente"> 
+ 
+          </div>
+          <!-- fim chat-janela -->
+ 
         </div>
+        <!-- fim chat-container -->
+ 
+      </div>
     </section>
-    </main>
+ 
+    <!-- =========== DÚVIDAS FREQUENTES =========== -->
+    <section class="secao-duvidas">
+      <div class="duvidas-card">
+ 
+        <h2 class="duvidas-titulo">DÚVIDAS FREQUENTES</h2>
+        <p class="duvidas-subtitulo">Encontre respostas rápidas para as principais dúvidas</p>
+ 
+        <details>
+          <summary>Como faço para atualizar meus dados cadastrais?</summary>
+          <p>Vá em usuário e clique em "Dados Cadastrais" e veja quais dados serão atualizados e clique em "Editar". Se for a senha, vá até a tela de login e clique em "Esqueci minha senha".</p>
+        </details>
+ 
+        <details>
+          <summary>Quais as formas de pagamento aceitas?</summary>
+          <p>A SOS Brasil aceita: Boleto, Cartão (Crédito e Débito), Pix e Transferência Bancária. Acesse a página Financeiro e escolha seu meio de doação.</p>
+        </details>
+ 
+        <details>
+          <summary>Como acompanha os status da minha doação?</summary>
+          <p>Você irá receber atualizações por E-Mail e imagens no nosso portal de notícias. Todas as doações serão publicadas no portal "SOS Brasil".</p>
+        </details>
+ 
+        <details>
+          <summary>Como falo com um atendente?</summary>
+          <p>Clique em "Fale com a gente" no botão abaixo e você será redirecionado para nosso chat com um atendente da SOS Brasil no WhatsApp.</p>
+        </details>
+ 
+        <!-- Botão fale com a gente -->
+        <div class="btn-duvida-container">
+          <a href="#" class="btn-duvida">
+            <i class="fa-regular fa-circle-question"></i>
+            Não encontrou sua dúvida? fale com a gente
+          </a>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!-- =========== REDES SOCIAIS =========== -->
+    <section class="secao-redes">
+      <hr class="redes-linha">
+      <div class="redes-conteudo">
+        <p class="redes-titulo">SIGA NOSSAS REDES</p>
+        <div class="redes-icones">
+          <a href="#" target="_blank" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <hr class="redes-linha">
+    </section>
+ 
+  </main>
 </body>
 <footer>
     <div class="container">
