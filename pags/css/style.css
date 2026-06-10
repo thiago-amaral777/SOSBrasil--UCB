@@ -167,6 +167,7 @@ header {
 .aviso-imagem {
     flex: 1;
     max-width: 900px;
+     border-radius: 15px;
 }
 
 .carrossel {
