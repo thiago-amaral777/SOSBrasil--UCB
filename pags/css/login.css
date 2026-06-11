@@ -444,37 +444,42 @@ header {
 /* ══════════════════════════════════════
    FOOTER
 ══════════════════════════════════════ */
-.site-footer {
-  border-top: 1px solid var(--gray-200);
-  background: var(--white);
-  padding: 20px 24px;
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
+.footer-nav {
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-nav ul {
+  display: flex;
   gap: 24px;
+  list-style: none;
 }
 
-.footer-links { display: flex; gap: 24px; }
-.footer-links a {
-  font-size: 13px;
-  color: var(--gray-600);
-  transition: color .2s;
+.footer-nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
 }
-.footer-links a:hover { color: var(--red); }
 
-.footer-logo {
-  font-family: var(--font-head);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--red);
+.footer-nav a:hover {
+  color: var(--branco);
 }
-.footer-logo span { color: var(--red); }
 
+footer {
+    background: #222;
+    color: #aaa;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 13px;
+}
 /* ══════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════ */
