@@ -22,14 +22,15 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="home.html" class="ativo">Home</a></li>
-                    <li><a href="financeiro.html" >Banco Digital</a></li>
-                    <li><a href="ajuda.html">Ajuda</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="financeiro.html">Banco Digital</a></li>
+                    <li><a href="ajuda.html" class="ativo">Ajuda</a></li>
                     <li><a href="batepapoIA.html">Bate-Papo / IA</a></li>
                 </ul>
             </div>
-            <div class="bnt.login">
-                <a href="login.html"><button class="btn-login">Login</button></a>
+            <div class="nav-botoes">
+                <a hidden href="login.html"><button class="btn-login">Login</button></a>
+                <a hidden href="login.html"><button class="btn-cadastrar">Cadastre-se</button></a>
             </div>
         </nav>
     </header>
@@ -218,25 +219,15 @@
   <!-- ══════════════════════════════════════
        FOOTER
   ══════════════════════════════════════ -->
-  <footer>
-        <div class="footer-bottom">
-      <div class="container footer-nav">
-        <a class="logo" href="#">SOSBrasil</a>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="financeiro.html">Banco Digital</a></li>
-          <li><a href="ajuda.html">Ajuda</a></li>
-          <li><a href="batepapoIA.html">Bate Papo/IA</a></li>
-        </ul>
-        <span>Português</span>
-      </div>
-    </div>  
-  
-  <div class="container">
-            <p>© 2026 SOSBrasil — Todos os direitos reservados.</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+    
+      <span class="footer-logo"><strong>SOS</strong>Brasil</span>
     </div>
-</footer>
+  </footer>
 
-  <script>lucide.createIcons();</script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/SOS.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>

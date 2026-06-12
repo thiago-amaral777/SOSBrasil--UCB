@@ -38,8 +38,8 @@ a { text-decoration: none; color: inherit; }
 ══════════════════════════════════════ */
 header {
     width: 100%;
-    background: var(--branco);
-    border-bottom: 2px solid var(--cinza-borda);
+    background: white;
+    border-bottom: 2px solid #f1f1f1;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -89,36 +89,6 @@ header {
     gap: 10px;
 }
 
-.btn-login {
-    background: var(--branco);
-    color: var(--vermelho);
-    padding: 10px 20px;
-    border: 2px solid var(--vermelho);
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: all 0.3s;
-}
-
-.btn-login:hover {
-    background: var(--vermelho);
-    color: var(--branco);
-}
-
-.btn-cadastrar {
-    background: var(--vermelho);
-    color: var(--branco);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s;
-}
-
-.btn-cadastrar:hover {
-    background: var(--vermelho-escuro);
-}
 
 /* ══════════════════════════════════════
    MAIN WRAPPER
@@ -444,42 +414,38 @@ header {
 /* ══════════════════════════════════════
    FOOTER
 ══════════════════════════════════════ */
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+.site-footer {
+  border-top: 1px solid var(--gray-200);
+  color: #aaa;
+  background: #222;
+  padding: 20px 24px;
 }
 
-.footer-nav {
-  min-height: 70px;
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-}
-
-.footer-nav ul {
-  display: flex;
   gap: 24px;
-  list-style: none;
 }
 
-.footer-nav a {
+.footer-links { display: flex; gap: 24px; }
+.footer-links a {
+  font-size: 13px;
   color: #aaa;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s;
+  transition: color .2s;
 }
+.footer-links a:hover { color: #e0e0e0; }
 
-.footer-nav a:hover {
-  color: var(--branco);
+.footer-logo {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #aaa;
 }
+.footer-logo span { color: var(--red); }
 
-footer {
-    background: #222;
-    color: #aaa;
-    padding: 24px 0;
-    text-align: center;
-    font-size: 13px;
-}
 /* ══════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════ */

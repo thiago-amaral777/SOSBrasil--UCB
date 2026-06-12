@@ -718,13 +718,7 @@ footer ul {
 
 .map::before,
 .map::after,
-.road {
-  content: "";
-  position: absolute;
-  display: block;
-  background: rgba(255,255,255,0.7);
-  border-radius: 99px;
-}
+
 
 .map::before { width: 120%; height: 18px; left: -8%;  top: 48%;  transform: rotate(-9deg); }
 .map::after  { width: 18px; height: 140%; left: 62%;  top: -18%; transform: rotate(18deg); }
